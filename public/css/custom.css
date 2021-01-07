@@ -1,0 +1,1558 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+
+/*  =======================  LOGIN SCREEN CSS START ============================================ */
+
+.main-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 770px;
+    margin: 0px auto;
+    padding: 4%;
+    text-align: center;
+    width: 100%;
+    background-image: url("./../images/signin-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+}
+
+.spinner {
+    height: 30px !important;
+    width: 30px !important;
+    border-top-color: #ffffff !important;
+}
+
+.black-cls {
+    background-color: #000000;
+    background-image: none;
+}
+
+.form-cls {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.form-cls .bv-no-focus-ring input.form-control {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: none;
+    padding-left: 5px;
+    color: #fff;
+}
+
+.form-cls .bv-no-focus-ring input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.form-cls .bv-no-focus-ring input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.form-cls .bv-no-focus-ring input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.form-cls .bv-no-focus-ring input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: #00e35b !important;
+    border: 0px !important;
+    color: #000 !important;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    background-color: #00e35b !important;
+    border: 0px !important;
+    color: #000 !important;
+    box-shadow: none;
+}
+
+.ctm-btm-sin {
+    background-color: #00e35b !important;
+    border: 0px;
+    color: #000;
+    padding: 10px 10px;
+    width: 300px;
+    font-size: 20px !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px !important;
+    margin: 6% 0;
+    color: #000000;
+    text-align: center;
+    padding: 15px !important;
+    height: auto !important;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.ctm-btm-sin:hover {
+    background-color: #00e35b;
+    border: 0px;
+    color: #000;
+}
+
+.ctm-btm-sin span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.ctm-btm-sin span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.ctm-btm-sin:hover span {
+    padding-right: 25px;
+}
+
+.ctm-btm-sin:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.ctm-fpw:hover {
+    color: #00e35b;
+    text-decoration: none;
+}
+
+.ctm-fpw {
+    font-size: 20px;
+    color: #fff;
+}
+
+.ctm-fpw:focus {
+    text-decoration: none;
+}
+
+.ctm-reg {
+    margin: 0;
+    background-color: #fff;
+    border-radius: 0px;
+    margin: 0px !important;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.0);
+}
+
+.form-cls .bv-no-focus-ring {
+    position: relative;
+}
+
+.form-cls .invalid-feedback {
+    width: 100%;
+    font-size: 13px;
+    color: #ff0019;
+    font-family: Open Sans;
+    padding: 0px;
+    margin: -10px 0 0 0;
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 50px;
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+    background-image: none;
+}
+
+.was-validated .form-control:invalid:focus,
+.form-control.is-invalid:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0);
+}
+
+.alert-success {
+    color: #00e35b;
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 9;
+    text-align: center;
+}
+
+.alert-danger {
+    color: #f40017;
+    background-color: transparent;
+    border-color: transparent;
+    text-align: center;
+    z-index: 9;
+}
+
+
+/*  =======================  LOGIN SCREEN CSS END ===========   */
+
+
+/*  =======================  REGISTER SCREEN CSS START ===========   */
+
+.ctm-select {
+    background-color: transparent;
+    border: 0;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 0;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: none;
+    padding-left: 2px;
+    text-transform: none;
+}
+
+.custom-select option {
+    color: #000;
+}
+
+.custom-select {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
+    outline: none !important;
+    outline-style: none !important;
+}
+
+select:-moz-focusring,
+select::-moz-focus-inner {
+    color: transparent !important;
+    text-shadow: 0 0 0 #fff !important;
+    background: none !important;
+}
+
+.ctm-calndr.b-form-btn-label-control {
+    background: transparent;
+}
+
+.custom-select::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #ffffff;
+    text-shadow: none;
+}
+
+.custom-select::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ffffff;
+    text-shadow: none;
+}
+
+.custom-select:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #ffffff;
+    text-shadow: none;
+}
+
+.custom-select:-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+    text-shadow: none;
+}
+
+.custom-select:focus {
+    border-color: #ffffff;
+    outline: 0;
+    box-shadow: none;
+}
+
+.ctm-select option {
+    font-size: 14px;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+.bi-calendar.b-icon.bi {
+    color: #fff;
+}
+
+.bi-calendar-fill.b-icon.bi:hover {
+    color: #fff;
+}
+
+#datepicker-dateformat2__value_ {
+    text-align: left;
+    color: #fff !important;
+    order: 1;
+}
+
+#datepicker-dateformat2 {
+    order: 2;
+}
+
+.bi-calendar,
+.bi-calendar-fill {
+    fill: #fff;
+}
+
+.ctm-calndr.b-form-btn-label-control {
+    box-shadow: none;
+    border-color: #fff;
+}
+
+.b-calendar-grid-body .btn-outline-primary {
+    color: #0cac54;
+}
+
+.b-calendar-grid-body .btn-outline-primary:hover {
+    background-color: #10bd5d;
+    color: #fff;
+}
+
+.restpass {
+    padding-bottom: 70px;
+}
+
+.restpass h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.restpass p {
+    padding: 0 0;
+    line-height: 31px;
+    font-size: 16px;
+}
+
+
+/*  =======================  REGISTER SCREEN CSS END ===========   */
+
+
+/*  =======================  HOME SCREEN CSS START ===========   */
+
+.tab-content {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.tab-content .nav-tabs {
+    border-bottom: none;
+}
+
+.tab-content .tabs #__BVID__12__BV_tab_container_ {
+    padding: 30px 0;
+    margin: 0px;
+    margin-top: 0px;
+    padding-bottom: 0;
+}
+
+.tab-content .nav-tabs .nav-link.active,
+.tab-content .nav-tabs .nav-item.show .nav-link {
+    color: #fff;
+    border-color: #1bd350;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 151, 62, 1)), to(rgba(12, 205, 63, 1)));
+    background: -o-linear-gradient(top, rgba(2, 151, 62, 1) 0%, rgba(12, 205, 63, 1) 100%);
+    background: linear-gradient(180deg, rgba(2, 151, 62, 1) 0%, rgba(12, 205, 63, 1) 100%);
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-size: 16px;
+}
+
+.tab-content .nav-tabs .nav-link {
+    border: 1px solid #fff;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-size: 16px;
+    margin: 0px 10px;
+}
+
+.form-cls.test {
+    margin: 1%;
+}
+
+.test .ctm-select {
+    background-color: #09bd3e;
+    border-bottom: none;
+    width: 40%;
+    border-radius: 30px;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 10px;
+    color: #ffffff;
+}
+
+.hbox-content {
+    background-color: #212121;
+    padding: 20px;
+    text-align: left;
+}
+
+.hbox-content h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+.hbox-content p {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 0 0 8px 0;
+    margin: 0;
+}
+
+.hbox-content .btn {
+    margin: 0px;
+    padding: 0px;
+    color: #09bd3e;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.hbox-content:last-child {
+    border-right: 0px;
+    border-left: 10px solid #000;
+}
+
+.hbox-content {
+    background-color: #212121;
+    padding: 20px;
+    text-align: left;
+    border-right: 10px solid #000;
+}
+
+.shopimg {
+    width: 100%;
+    padding: 2px 0px;
+}
+
+.footer-content {
+    width: 100%;
+    background-color: #00e35b;
+    position: absolute;
+    color: #fff;
+    left: 0;
+    bottom: -44px;
+}
+
+.footer-content .navbar-nav {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: inherit;
+    -ms-flex-direction: inherit;
+    flex-direction: inherit;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    width: 100%;
+    color: #fff;
+}
+
+.fa-signal {
+    transform: rotateY(180deg);
+    font-size: 12px;
+}
+
+.gym-icon #Capa_1 {
+    width: 30px;
+    fill: #fff;
+}
+
+.footer-content .navbar-nav a {
+    border-top: 3px solid #00e35b;
+    padding: 6px 20px;
+    color: #fff;
+    -webkit-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    background-color: #00e35b;
+    font-size: 26px;
+}
+
+.footer-content .navbar-nav a:hover,
+.footer-content .navbar-nav a:active,
+.footer-content .navbar-nav a:focus {
+    border-top: 3px solid #ffffff;
+    background-color: #00ab45;
+}
+
+.train-list {
+    text-align: left;
+}
+
+.train-list h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 15px 0;
+    padding: 0;
+}
+
+.fa-ellipsis-v {
+    font-size: 20px;
+    padding: 0px 0px 0px 0px;
+    position: absolute;
+    top: -3px;
+    left: -5px;
+}
+
+.fa-bars {
+    margin-left: 5px;
+    font-size: 22px;
+}
+
+.nav-link span {
+    position: relative;
+}
+
+.nav-item p {
+    font-size: 18px;
+    padding: 0;
+    margin: -4px 0 0 0;
+    font-weight: 700;
+}
+
+.nav-item.main-btn a {
+    margin: -12px 0 6px 0;
+    background-color: #00ab45;
+    border: 4px solid #FFF;
+    border-radius: 80px;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    box-shadow: 0 0px 12px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item.main-btn a:hover {
+    border: 4px solid #FFF;
+    background-color: #008636;
+}
+
+
+/*  =======================  HOME SCREEN CSS END =====================   */
+
+
+/*  =======================  TRANING SCREEN CSS START ==========================  */
+
+.svg-icon {
+    text-align: center;
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.train #Layer_1 {
+    width: 100px;
+    fill: #00e25b;
+    display: block;
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+.train,
+.process {
+    width: 100%;
+    text-align: center;
+}
+
+.train .btn:hover {
+    background-color: #00ab45;
+    color: #fff;
+}
+
+.train .btn {
+    width: 60%;
+    background-color: #00e25b;
+    margin: 8px 0 !important;
+}
+
+.train h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0 0 40px 0;
+    padding: 0px;
+    font-size: 50px;
+}
+
+.train h3::after {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 1px;
+    background-color: #00e25b;
+    right: 210px;
+    top: 24px;
+}
+
+.train h3::before {
+    width: 65px;
+    height: 1px;
+    background-color: #00e25b;
+    display: block;
+    position: absolute;
+    content: "";
+    left: 210px;
+    top: 24px;
+}
+
+.train h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #00e25b;
+    padding: 10px 0 30px 0;
+    position: relative;
+    margin: 0 -20px;
+}
+
+.strn-cls {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+    padding: 15px 15px;
+    align-items: center;
+    margin: 8px 0px;
+    -webkit-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+}
+
+.exc-txt {
+    padding-left: 10px;
+}
+
+.strn-cls img {
+    max-width: 100px;
+    width: 100%;
+}
+
+.exc-txt h4 {
+    font-size: 20px;
+    color: #00e15d;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.exc-txt p {
+    font-size: 15px;
+    color: #fff;
+    padding: 1px 10px 0px 0px;
+    margin: 0px;
+}
+
+.strn-cls:hover {
+    border: 1px solid #00e15d
+}
+
+
+/*  =======================  TRANING SCREEN CSS END ==========================  */
+
+
+/*  =======================  TRANING SCREEN CSS START ==========================  */
+
+.process h2 {
+    text-transform: uppercase;
+    padding: 20px 0 50px 0;
+    margin: 0px;
+    font-weight: 600;
+}
+
+.process {
+    padding: 50px 0 10px 0;
+}
+
+.process #datepicker-dateformat2__outer_ {
+    background-color: #292a2a;
+    border-bottom: 0px;
+    padding: 12px 10px !important;
+    margin-bottom: 0px;
+}
+
+.back-next-btn .btn {
+    background-color: green;
+    width: 100%;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 15px 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 151, 62, 1)), to(rgba(12, 205, 63, 1)));
+    background: -o-linear-gradient(top, rgba(2, 151, 62, 1) 0%, rgba(12, 205, 63, 1) 100%);
+    background: linear-gradient(360deg, rgb(2, 151, 62) 0%, rgb(12, 205, 63) 100%);
+    border-color: #0bcb3e;
+    font-weight: 600;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.back-next-btn .btn:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 151, 62, 1)), to(rgba(12, 205, 63, 1)));
+    background: -o-linear-gradient(top, rgba(2, 151, 62, 1) 0%, rgba(12, 205, 63, 1) 100%);
+    background: linear-gradient(180deg, rgba(2, 151, 62, 1) 0%, rgba(12, 205, 63, 1) 100%);
+    text-decoration: none;
+}
+
+.back-next-btn .col {
+    padding: 0px;
+}
+
+.back-next-btn .col:first-child {
+    padding-right: 10px;
+}
+
+.back-next-btn .col:last-child {
+    padding-left: 10px;
+}
+
+.back-next-btn .btn .svg-inline--fa {
+    margin: -2px 3px;
+}
+
+.incdecreanemt .number-input {
+    width: 100%;
+    background-color: #00e35b;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.incdecreanemt .number-input__button {
+    margin: 10px !important;
+    border-radius: 30px !important;
+    background-color: #00ab45 !important;
+    color: #fff !important;
+    opacity: 1 !important;
+    border: 0px !important;
+}
+
+.incdecreanemt .number-input__input {
+    text-align: center !important;
+    background-color: transparent !important;
+    border: 0px !important;
+    font-size: 23px !important;
+    padding: 4px !important;
+    font-weight: 700 !important;
+}
+
+.number-input__button[data-v-3580ff4f]::before {
+    height: 2px !important;
+}
+
+.number-input__button[data-v-3580ff4f]::after {
+    width: 2px !important;
+}
+
+number-input__button[data-v-3580ff4f]:hover::after,
+.number-input__button[data-v-3580ff4f]:hover::before {
+    background-color: #000000 !important;
+}
+
+.number-input__button[data-v-3580ff4f]:hover::after,
+.number-input__button[data-v-3580ff4f]:hover::before {
+    background-color: #000000 !important;
+}
+
+.number-input__button[data-v-3580ff4f]:disabled::after,
+.number-input__button[data-v-3580ff4f]:disabled::before {
+    background-color: #000000 !important;
+}
+
+.incdecreanemt {
+    margin-bottom: 35px;
+}
+
+.lstep.tab-content .nav-tabs .nav-link {
+    padding: 9px 18px;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin: 0 4px;
+}
+
+.tab-content.lstep {
+    text-align: center;
+    margin: 0px auto;
+    padding: 50px 0;
+}
+
+.lstep .tabs .tab-pane h1,
+.tscore h1 {
+    font-size: 37px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.lstep .tabs .tab-pane span {
+    font-size: 60px;
+    font-weight: 700;
+    background-color: #000;
+    border: 55px solid #00e35b;
+    border-radius: 150px;
+    padding: 0;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+/*  =======================  TRANING SCREEN CSS END ==========================  */
+
+
+/*  =======================  TODAYS SCORES CSS START ==========================  */
+
+.tscore .content {
+    font-size: 52px;
+    font-weight: 800;
+}
+
+.circle__progress.circle__progress--fill {
+    stroke: rgb(0, 227, 91) !important;
+}
+
+.circle__progress.circle__progress--path {
+    stroke: rgb(0, 227, 91) !important;
+}
+
+
+/******************************************/
+
+.tscore .custom-control-label::before {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #04a43e;
+    background-color: transparent;
+    top: 2px;
+    left: 0;
+}
+
+.tscore .custom-control-label {
+    padding-left: 35px;
+    margin: 50px 0;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2304a43e'/%3e%3c/svg%3e");
+}
+
+.tscore .custom-control-label::after {
+    background-image: none;
+    width: 24px;
+    height: 21px;
+    left: 0;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #04a43e;
+    background-color: #000;
+    box-shadow: none;
+}
+
+.custom-control-label::before,
+.custom-file-label,
+.custom-select {
+    transition: none !important;
+}
+
+.test-screen.col {
+    margin: 0px auto;
+    padding: 30px 0;
+}
+
+.pro-steps.step-indicators .step-indicator {
+    color: #fff !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 151, 62, 1)), to(rgba(12, 205, 63, 1)));
+    background: -o-linear-gradient(top, rgba(2, 151, 62, 1) 0%, rgba(12, 205, 63, 1) 100%);
+    background: linear-gradient(180deg, rgba(2, 151, 62, 1) 0%, rgba(12, 205, 63, 1) 100%);
+    border-color: #08ba3e !important;
+}
+
+.pro-steps.step-indicators .step-indicators-line {
+    background: rgb(5, 172, 62) !important;
+}
+
+.pro-steps {
+    margin: 30px 0;
+}
+
+.test-screen p {
+    padding: 20px 0;
+    text-align: left;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.test-screen h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    padding: 0px 0 20px 0;
+}
+
+.test-screen input {
+    font-size: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: #00e35b;
+    height: 100px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #3e3e3e;
+    border-radius: 0px;
+    margin: 10px;
+    width: 300px;
+}
+
+.input-border {
+    border: 1px solid #dee2e6 !important;
+    width: 322px;
+    margin: 0px auto;
+}
+
+.test-screen input::-webkit-input-placeholder {
+    color: #3e3e3e !important;
+    opacity: 1;
+}
+
+.test-screen input::-moz-placeholder {
+    color: #3e3e3e !important;
+    opacity: 1;
+}
+
+.test-screen input:-ms-input-placeholder {
+    color: #3e3e3e !important;
+    opacity: 1;
+}
+
+.test-screen input::-ms-input-placeholder {
+    color: #3e3e3e !important;
+    opacity: 1;
+}
+
+.test-screen input::placeholder {
+    color: #000000 !important;
+    opacity: 1;
+}
+
+.mg-b {
+    margin-bottom: 30px;
+}
+
+
+/*  =======================  TODAYS SCORES CSS END ==========================  */
+
+
+/* ======================= Training List CSS Start =========================== */
+
+.ctm-table {
+    width: 100%;
+    margin: 50px 0 0 0;
+}
+
+.head-row {
+    background-color: #00e35b;
+    border: 0px !important;
+    box-shadow: none;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.ctm-table thead {
+    border: 0px !important;
+    box-shadow: none;
+    color: #000;
+}
+
+.head-row th {
+    padding: 15px 0;
+    border-top: 0px;
+    border-bottom: 0px !important;
+}
+
+.ctm-table tbody {
+    border: 0px;
+}
+
+.content-row {
+    border: 0px;
+    font-size: 18px;
+    border-bottom: 1px solid #00e35b;
+}
+
+.content-row td {
+    border-top: 0px;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 24px;
+}
+
+.ctm-table .b-table {
+    border: 1px solid #00e35b;
+}
+
+.content-row .btn {
+    background-color: transparent;
+    border: 0px;
+    font-size: 24px;
+    padding: 0;
+    margin: 0px;
+    color: #fff;
+}
+
+.content-row .btn:hover {
+    color: #00e35b;
+    box-shadow: none !important;
+}
+
+.content-row .btn:not(:disabled):not(.disabled):active,
+.content-row .btn:not(:disabled):not(.disabled).active,
+.show>.content-row .btn.dropdown-toggle {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.content-row .btn:focus,
+.content-row .btn.focus {
+    box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.0);
+}
+
+#ctm-modal-1 .modal-header {
+    border: 0px !important;
+}
+
+#ctm-modal-1 .close {
+    font-size: 30px;
+    opacity: 1;
+    color: #00e358;
+    font-weight: 400;
+    padding: 16px;
+    border: 2px solid #00e358;
+    border-radius: 40px;
+    line-height: 16px;
+    margin: 0px 0px;
+    text-shadow: none;
+}
+
+#ctm-modal-1 .modal-footer {
+    display: none;
+}
+
+#ctm-modal-1 .modal-content {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+#ctm-modal-1 .modal-dialog {
+    max-width: 730px;
+    margin: 10px auto;
+}
+
+.modal-video {
+    margin: 30px auto;
+}
+
+.modal-backdrop {
+    opacity: 0.8;
+}
+
+.tips-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 44px;
+}
+
+.tips-ul li .fa-check {
+    color: #00e258;
+}
+
+
+/* ======================= Training List CSS End =========================== */
+
+
+/* ======================= Profile - Edit Profile CSS Start ================= */
+
+.personal-info .form-control {
+    background-color: transparent;
+}
+
+.personal-info .form-control::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.personal-info .form-control::-moz-placeholder {
+    color: #ffffff;
+}
+
+.personal-info .form-control:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.personal-info .form-control::-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.personal-info .form-control::placeholder {
+    color: #ffffff;
+}
+
+.personal-info label {
+    padding-top: 4px;
+}
+
+.personal-info {
+    text-align: left;
+    padding: 30px 0;
+    border-bottom: 1px dashed #5a8383;
+    width: 100%;
+}
+
+.personal-info .form-control:focus {
+    border-color: #fff;
+    color: #fff;
+}
+
+.personal-info h1 {
+    font-size: 28px;
+    padding: 24px 0;
+    margin: 0 0 20px 10px;
+    position: relative;
+    color: #00e35b;
+}
+
+.personal-info h1::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 40px;
+    background-color: #00e35a;
+    position: absolute;
+    left: -10px;
+}
+
+.personal-info.up-mrgn-b {
+    border-bottom: 0px;
+    padding: 15px 0;
+}
+
+.user-profile .fa-user-circle {
+    font-size: 100px;
+    color: #00e35b;
+    margin-top: 50px;
+}
+
+.user-profile {
+    width: 100%;
+}
+
+.edit-field {
+    position: relative;
+}
+
+.edit-field .btn {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    color: #fff;
+}
+
+#e-dropdown-btn_0 {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+.e-btn-icon.e-icons.e-icon-right.e-caret {
+    display: none;
+}
+
+#e-dropdown-btn_0 p {
+    margin-top: 10px !important;
+}
+
+#e-dropdown-btn_0 {
+    background-color: transparent !important;
+    color: #fff !important;
+    padding: 6px 0 !important;
+}
+
+.e-dropdown-btn:active,
+.e-dropdown-btn.e-btn:active {
+    box-shadow: none !important;
+}
+
+.e-dropdown-popup ul .e-item:hover {
+    background-color: #00ab45 !important;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.e-dropdown-popup {
+    background-color: #00e35b !important;
+    color: rgb(0, 0, 0);
+}
+
+
+/* ======================= Profile - Edit Profile CSS Edn ================= */
+
+
+/* ======================= Media Qry =======================   */
+
+@media (max-width:991px) {
+    .mrg-top {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:767px) {
+    .mrg-top {
+        margin-top: 30px;
+    }
+    .main-wrapper {
+        max-width: 100%;
+    }
+    .logo {
+        width: 100px;
+    }
+    .form-cls .bv-no-focus-ring .form-control {
+        font-size: 16px;
+    }
+    .ctm-btm-sin {
+        font-size: 18px;
+        width: 290px;
+    }
+    .line-chart #line-chart {
+        width: 100% !important;
+    }
+    .hbox-content:last-child {
+        border-right: 0px;
+        border-left: 0px;
+        margin-bottom: 80px;
+    }
+    .hbox-content {
+        margin-bottom: 20px;
+        border-right: 0px;
+    }
+    .hbox-content.col {
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+    .train #Layer_1 {
+        width: 70px;
+    }
+    .train h1 {
+        margin: 0 0 20px 0;
+        font-size: 40px;
+    }
+    .train h3::after {
+        width: 40px;
+        right: 240px;
+        top: 25px;
+    }
+    .train h3::before {
+        width: 40px;
+        left: 240px;
+        top: 25px;
+    }
+    .train .btn {
+        width: 90%;
+    }
+    .test .ctm-select {
+        width: 90%;
+    }
+    .exc-txt p {
+        font-size: 13px;
+        padding: 0;
+    }
+    .exc-txt h4 {
+        font-size: 16px;
+    }
+    .strn-cls {
+        padding: 8px 8px;
+        align-items: center;
+        margin: 4px 0px;
+    }
+    .train-list h1 {
+        font-size: 26px;
+        margin: 9px 0;
+        padding: 0;
+    }
+    .train-list {
+        margin-bottom: 70px;
+    }
+    .footer-content {
+        position: fixed;
+        bottom: 0px;
+    }
+    .black-cls {
+        overflow: hidden;
+    }
+    .train .btn:last-child {
+        margin-bottom: 80px !important;
+    }
+    .process h2 {
+        padding: 20px 0 30px 0;
+        font-size: 24px;
+    }
+    .age {
+        width: 70px;
+    }
+    .incdecreanemt {
+        margin-bottom: 20px;
+    }
+    .lstep .tabs .tab-pane h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .lstep .tabs .tab-pane span {
+        font-size: 45px;
+        border: 40px solid #00e35b;
+        border-radius: 150px;
+        padding: 0;
+        width: 230px;
+        height: 230px;
+        margin: 10px auto;
+        margin-bottom: 0px;
+    }
+    .mg-t {
+        margin-bottom: 25%;
+    }
+    .tab-content.lstep ul li {
+        width: 40%;
+        margin: auto 10px;
+    }
+    .tab-content.lstep ul li a {
+        padding: 11px 8px !important;
+        font-size: 13px !important;
+        margin: 7px auto !important;
+    }
+    .tscore .custom-control-label {
+        padding-left: 30px;
+        margin: 20px 0;
+        font-size: 16px;
+    }
+    .tscore .custom-control-label::before {
+        width: 22px;
+        height: 22px;
+    }
+    .tscore .custom-control-label::after {
+        background-image: none;
+        width: 21px;
+        height: 18px;
+        left: 0;
+        top: 4px;
+    }
+    .tscore .custom-control {
+        margin: 0px auto;
+        padding: 0 6px;
+    }
+    .test-screen h1 {
+        font-size: 26px;
+        padding: 10px 0 35px 0;
+    }
+    .ctm-table {
+        width: 100%;
+        margin: 50px 0 80px 0;
+    }
+    .content-row td {
+        padding: 12px 0;
+        font-size: 16px;
+    }
+    .head-row {
+        box-shadow: none;
+        font-size: 17px;
+    }
+    .head-row th {
+        padding: 12px 0;
+    }
+    .content-row .btn {
+        font-size: 16px;
+    }
+    .modal-cont {
+        width: 100%;
+        text-align: center;
+    }
+    .modal-cont img {
+        width: 100%;
+    }
+    .tips-ul {
+        font-size: 16px;
+        line-height: 33px;
+        text-align: left;
+    }
+    .personal-info label {
+        padding: 0;
+        margin: 0;
+    }
+    .personal-info .form-control {
+        font-size: 14px;
+    }
+    .up-mrgn-b {
+        margin-bottom: 60px;
+    }
+    .personal-info h1::before {
+        top: 10px;
+    }
+    .personal-info h1 {
+        font-size: 24px;
+        padding: 15px 0;
+    }
+    .personal-info.up-mrgn-b {
+        padding: 28px 0;
+    }
+}
+
+@media (max-width:400px) {
+    .tab-content .nav-tabs .nav-link,
+    .tab-content .nav-tabs .nav-link.active,
+    .tab-content .nav-tabs .nav-item.show .nav-link {
+        font-size: 13px;
+    }
+    .process h2 {
+        padding: 15px 0 25px 0;
+        font-size: 20px;
+    }
+    .process #datepicker-dateformat2__outer_ {
+        padding: 7px 7px !important;
+        font-size: 13px;
+    }
+    .process #datepicker-dateformat2__value_ {
+        font-size: 13px;
+    }
+    .back-next-btn .btn {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    .back-next-btn {
+        margin-bottom: 90px;
+    }
+    .incdecreanemt {
+        margin-bottom: 10px;
+    }
+    .lstep .tabs .tab-pane span {
+        font-size: 40px;
+        border: 40px solid #00e35b;
+        border-radius: 150px;
+        padding: 0;
+        width: 200px;
+        height: 200px;
+        margin: 10px auto;
+        margin-bottom: 0px;
+    }
+    .pro-steps.step-indicators .step-indicator {
+        font-size: 13px;
+        width: 25px;
+        height: 25px;
+    }
+    .test-screen p {
+        padding: 20px 0 0 0;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .test-screen input {
+        font-size: 20px;
+    }
+    .test-screen.col {
+        padding: 15px 0;
+    }
+    #ctm-modal-1 .close {
+        font-size: 25px;
+        padding: 10px;
+        line-height: 14px;
+    }
+}
+
+@media (max-width:320px) {
+    .input-border {
+        width: 292px;
+    }
+    .test-screen input {
+        width: 270px;
+    }
+    .content-row td {
+        font-size: 14px;
+    }
+    .head-row {
+        font-size: 14px;
+    }
+}
+
+.edit-field {
+    position: relative;
+}
+.edit-field .btn {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+.edit-field .btn-secondary:not(:disabled):not(.disabled):active {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
